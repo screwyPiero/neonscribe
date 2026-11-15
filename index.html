@@ -261,6 +261,12 @@ a{color:#2de2e6}a:hover{color:#ffd166}
           <p style="margin: 12px 0 0; color: #cbb8ec">В программе нажмите «Ввести ключ PRO» → «Вставить из буфера» → «Активировать». Ключ работает без интернета и сохраняется при переустановке.</p>
         </details>
         <details style="padding: 20px 24px; border-radius: 16px; background: #120a1f; border: 1px solid #3d2560">
+          <summary style="cursor: pointer; font-weight: 600; font-size: 18px">Как убедиться, что в установщике нет вирусов?</summary>
+          <p style="margin: 12px 0 0; color: #cbb8ec">Установщик NeonScribe 0.2 проверен на VirusTotal: 61 из 62 антивирусов ничего не нашли, включая Microsoft, Dr.Web, BitDefender и Avira. Одно срабатывание малоизвестного антивируса — ложное: такие эвристики иногда реагируют на установщики Inno Setup. <a href="https://www.virustotal.com/gui/file/dd7bbcf8f6378831e0d2aebb622e9c88ba11de03c3449d012a9fd69a7eb2ca9a" target="_blank" rel="noopener">Открыть отчёт VirusTotal</a>.</p>
+          <p style="margin: 12px 0 0; color: #cbb8ec">Чтобы убедиться, что скачанный файл не подменён, сравните его контрольную сумму SHA-256. В папке с файлом откройте PowerShell и выполните <code style="color: #ffd166">Get-FileHash NeonScribe-Setup.exe</code> — результат должен совпасть с этим:</p>
+          <p style="margin: 8px 0 0; font-family: Consolas, monospace; font-size: 14px; color: #ffd166; overflow-wrap: anywhere">dd7bbcf8f6378831e0d2aebb622e9c88ba11de03c3449d012a9fd69a7eb2ca9a</p>
+        </details>
+        <details style="padding: 20px 24px; border-radius: 16px; background: #120a1f; border: 1px solid #3d2560">
           <summary style="cursor: pointer; font-weight: 600; font-size: 18px">Windows пишет «Windows защитила ваш компьютер». Это безопасно?</summary>
           <p style="margin: 12px 0 0; color: #cbb8ec">Так Windows реагирует на новые программы без платной цифровой подписи. Нажмите «Подробнее», затем «Выполнить в любом случае». Установщик не просит прав администратора и ставит программу только в вашу папку пользователя.</p>
         </details>
